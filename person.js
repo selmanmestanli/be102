@@ -8,7 +8,7 @@ class Person {
   }
 
   greet(person) {
-    console.log(`Hello ${person.name}, this is ${this.name} at age ${this.age}*7`)
+    console.log(`Hello ${person.name}, this is ${this.name} at age ${this.age}*8`)
   }
 
   addPhoto(photo) {
