@@ -8,7 +8,7 @@ class Person {
   }
 
   greet(person) {
-    console.log(`Hello ${person.name}, this is ${this.name} aaa`)
+    console.log(`Hello ${person.name}, this is ${this.name}`)
   }
 
   addPhoto(photo) {
@@ -28,9 +28,11 @@ Bio: ${this.bio}
 ## Photos (${this.photos.length})
 
 ${this.photos
-  .map(photo => `### ${photo.filename}
+  .map(
+    photo => `### ${photo.filename}
     ❤️️  ${photo.likedBy.map(person => person.name).join(', ')}
-    `)
+    `
+  )
   .join('\n')}
 `
   }
