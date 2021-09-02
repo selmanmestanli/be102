@@ -1,3 +1,5 @@
+const color = require('colors')
+
 class Person {
   constructor(name, age) {
     this.name = name
