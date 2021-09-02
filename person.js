@@ -1,5 +1,3 @@
-const color = require('colors')
-
 class Person {
   constructor(name, age) {
     this.name = name
@@ -10,7 +8,7 @@ class Person {
   }
 
   greet(person) {
-    console.log(`Hello ${person.name}, this is ${this.name} at age ${this.age}*8`)
+    console.log(`Hello ${person.name}, this is ${this.name}`)
   }
 
   addPhoto(photo) {
