@@ -2,7 +2,7 @@ const Person = require('./person')
 const Photo = require('./photo')
 
 function signUp(name, age) {
-  return new Person(name, age)
+  return Person(name, age)
 }
 
 const mihri = signUp('mihri', 35)
@@ -20,6 +20,12 @@ steve.bio = 'An awesome hacker who has seen it all, and now sharing them all wit
 armagan.likePhoto(berlinPhoto)
 mihri.likePhoto(berlinPhoto)
 mihri.likePhoto(munichPhoto)
+
+try {
+  steve.profile = "Steve's gorgeous new profile"
+} catch (e) {
+  // console.log("well it did not work")
+}
 
 // console.log(steve.profile)
 
